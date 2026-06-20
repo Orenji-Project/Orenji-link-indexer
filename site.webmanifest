@@ -1,0 +1,17 @@
+{
+  "name": "Orenji Apps",
+  "short_name": "Orenji",
+  "description": "Indice simples das apps do projecto Orenji.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8faf7",
+  "theme_color": "#f59a23",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "project": {
+    "name": "Orenji Apps",
+    "description": "Indice simples das apps do projecto Orenji.",
+    "updatedAt": "2026-06-20"
+  },
+  "links": [
+    {
+      "name": "Orenji Fitness",
+      "url": "https://orenji-project.github.io/orenji-fitness-app/"
+    },
+    {
+      "name": "Orenji Study",
+      "url": "https://fallenmster19.github.io/Orenji-Study/"
+    },
+    {
+      "name": "Orenji Recipes",
+      "url": "https://orenji-project.github.io/Orenji-Recipes/"
+    },
+    {
+      "name": "Orenji Focus",
+      "url": "https://orenji-project.github.io/Orenji-Focus/Orenji%20Focus/"
+    },
+    {
+      "name": "Orenji Habit",
+      "url": "https://orenji-project.github.io/Orenji-Habit/Orenji%20Habit/"
+    }
+  ]
+}

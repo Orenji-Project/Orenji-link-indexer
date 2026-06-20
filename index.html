@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f59a23" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1d1408" media="(prefers-color-scheme: dark)">
+    <meta name="msapplication-TileColor" content="#f59a23">
+    <title>Orenji Apps</title>
+    <meta
+      name="description"
+      content="Indice simples das apps do projecto Orenji."
+    >
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Orenji Apps">
+        <img src="assets/orenji-mark-transparent.png" alt="" width="86" height="92">
+        <span>
+          <strong>Orenji</strong>
+          <small>Apps</small>
+        </span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <img class="hero-mark" src="assets/orenji-mark-transparent.png" alt="" width="300" height="320">
+        <div class="hero-copy">
+          <p>Ecossistema Orenji</p>
+          <h1 id="page-title">As apps do projecto, num sitio simples.</h1>
+        </div>
+      </section>
+
+      <section class="apps-section" aria-label="Apps Orenji">
+        <div class="apps-grid" data-app-list></div>
+      </section>
+    </main>
+
+    <template id="app-card-template">
+      <article class="app-card">
+        <button class="card-toggle" type="button" data-card-toggle>
+          <span class="banner" data-banner>
+            <span>
+              <img data-logo alt="" loading="lazy">
+            </span>
+            <strong data-banner-title></strong>
+          </span>
+          <span class="card-summary">
+            <span>
+              <strong data-name></strong>
+              <small data-tagline></small>
+            </span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+
+        <div class="card-details" data-card-details>
+          <div class="details-inner">
+            <p data-description></p>
+            <a class="app-link" data-url target="_blank" rel="noreferrer">
+              <span>Abrir app</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
