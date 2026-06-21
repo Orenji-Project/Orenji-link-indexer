@@ -4,7 +4,7 @@ const apps = [
     tagline: "Treinos e progresso",
     bannerTitle: "Fitness",
     logo: "assets/fitness-logo.png",
-    url: "https://fallenmster19.github.io/fitnessapp/",
+    url: "https://orenji-project.github.io/orenji-fitness-app/",
     accent: "#f59a23",
     accentSoft: "#fff1df",
     description:
@@ -15,7 +15,7 @@ const apps = [
     tagline: "Estudo organizado",
     bannerTitle: "Study",
     logo: "assets/study-logo.png",
-    url: "https://fallenmster19.github.io/Orenji-Study/",
+    url: "https://orenji-project.github.io/Orenji-Study/",
     accent: "#6f9447",
     accentSoft: "#eef6e8",
     description:
@@ -37,7 +37,7 @@ const apps = [
     tagline: "Foco e tempo",
     bannerTitle: "Focus",
     logo: "assets/focus-logo.png",
-    url: "https://orenji-project.github.io/Orenji-Focus/Orenji%20Focus/",
+    url: "https://orenji-project.github.io/Orenji-Focus/",
     accent: "#4f8f69",
     accentSoft: "#eaf6ef",
     description:
@@ -48,7 +48,7 @@ const apps = [
     tagline: "Habitos diarios",
     bannerTitle: "Habit",
     logo: "assets/habit-logo.png",
-    url: "https://orenji-project.github.io/Orenji-Habit/Orenji%20Habit/",
+    url: "https://orenji-project.github.io/Orenji-Habit/",
     accent: "#d9822b",
     accentSoft: "#fff3e6",
     description:
