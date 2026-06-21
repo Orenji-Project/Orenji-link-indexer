@@ -43,7 +43,7 @@ Cada entrada segue este formato:
 }
 ```
 
-`links.json` fica como inventario simples dos URLs principais, mas a interface e renderizada a partir de `script.js`.
+Os URLs dos botoes `Abrir app` sao lidos de `links.json` sem cache. Para trocar um destino, atualiza a entrada com o mesmo `name` em `links.json`.
 
 ## Publicar no GitHub Pages
 

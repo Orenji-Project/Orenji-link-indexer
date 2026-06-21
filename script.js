@@ -59,10 +59,43 @@ const apps = [
 const appList = document.querySelector("[data-app-list]");
 const template = document.querySelector("#app-card-template");
 
-renderApps();
+loadApps();
 
-function renderApps() {
-  appList.replaceChildren(...apps.map(createCard));
+async function loadApps() {
+  renderApps(await getAppsWithConfiguredLinks());
+}
+
+async function getAppsWithConfiguredLinks() {
+  try {
+    const response = await fetch(`links.json?v=${Date.now()}`, { cache: "no-store" });
+
+    if (!response.ok) {
+      return apps;
+    }
+
+    const data = await response.json();
+    const urlsByName = new Map(
+      (data.links ?? [])
+        .filter(({ name, url }) => typeof name === "string" && typeof url === "string" && url)
+        .map(({ name, url }) => [name, url])
+    );
+
+    if (!urlsByName.size) {
+      return apps;
+    }
+
+    return apps.map((app) => ({
+      ...app,
+      url: urlsByName.get(app.name) ?? app.url,
+    }));
+  } catch (error) {
+    console.warn("Nao foi possivel carregar links.json.", error);
+    return apps;
+  }
+}
+
+function renderApps(appsToRender) {
+  appList.replaceChildren(...appsToRender.map(createCard));
 }
 
 function createCard(app, index) {
